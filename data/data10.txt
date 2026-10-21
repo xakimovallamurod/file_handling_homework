@@ -1,7 +1,0 @@
-Computer Vision
-SAMITMARKAZ
-ML
-CV
-OpenCV
-Numpy
-PYTHON

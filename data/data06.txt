@@ -1,6 +1,0 @@
-SAMITMARKAZ
-ML
-CV
-OpenCV
-Numpy
-PYTHON

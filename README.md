@@ -1,174 +1,283 @@
-# Welcome
-# File Handling
+# Fayllar bilan ishlash
 
-Automated grading of homework assignments and tests
-- fork this repository
-- solve the task
-- commit with proper message
+`data.txt` faylida Allamurodning kundaligidan parcha berilgan. Barcha funksiyalar `main.py` faylida: fayl matni `data` o'zgaruvchisiga o'qiladi va funksiyalarga beriladi.
 
-# Problems
-## file01
+## 01. get_lines
 
-  Convert data from file to list.
+Fayl matnini qatorlar ro'yxatiga aylantirib qaytaring.
 
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data01.txt"
-Output: [1, 2, 3, 4, 5, 6, 7]
-
+Kirish: data (data.txt matni)
+Chiqarish: ["Allamurod Xakimov", "Toshkent shahri, 2000-yil", "Bugun 8 soat ishladim", ..., "Ertaga 3 ta kitob olaman"]
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 02. count_chars
 
-## file02
+Fayldagi belgilar sonini (bo'sh joy va yangi qator belgilari ham kiradi) qaytaring.
 
-  Find the number of characters in the file.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data02.txt"
-Output: 28
-
+Kirish: data (data.txt matni)
+Chiqarish: 151
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 03. get_digits
 
-## file03
+Fayldagi barcha raqamlarni butun sonlar ro'yxati ko'rinishida qaytaring (har bir raqam alohida).
 
-  Return the numbers as a list type.
-
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data03.txt"
-Output: ['0', '7', '0', '7', '0', '8', '1', '2', '9']
-
+Kirish: data (data.txt matni)
+Chiqarish: [2, 0, 0, 0, 8, 2, 5, 3]
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 04. get_letters
 
-## file04
+Fayldagi barcha harflarni ro'yxat ko'rinishida qaytaring.
 
-  Return the str(non-digital) characters as a list type.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data04.txt"
-Output: ['p', 'y', 't', 'h', 'o', 'n', '\n', 'c', 'o', 'd', 'e', 'r']
-
+Kirish: data (data.txt matni)
+Chiqarish: ["A", "l", "l", ..., "n"]
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 05. count_digits_and_others
 
-## file05
+Fayldagi raqamlar sonini va raqam bo'lmagan belgilar sonini `[raqamlar, boshqalar]` ro'yxati ko'rinishida qaytaring.
 
-  Find the number of digital and str(non-digital) data.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data05.txt"
-Output: [9, 17]
-
+Kirish: data (data.txt matni)
+Chiqarish: [8, 143]
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 06. get_line_lengths
 
-## file06
+Har bir qatorning uzunligini ro'yxat ko'rinishida qaytaring.
 
-  Find the each row length.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data06.txt"
-Output: [12, 2, 2, 6, 5, 6]
-
+Kirish: data (data.txt matni)
+Chiqarish: [17, 25, 21, 35, 23, 24]
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 07. sum_digits
 
-## file07
+Fayldagi barcha raqamlar yig'indisini qaytaring (har bir raqam alohida).
 
-  Find a sum of numeric characters.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data07.txt"
-Output: 20
-
+Kirish: data (data.txt matni)
+Chiqarish: 20
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 08. max_digit
 
-## file08
+Fayldagi eng katta raqamni qaytaring.
 
-  Find the largest of the numeric characters.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data08.txt"
-Output: 7
-
+Kirish: data (data.txt matni)
+Chiqarish: 8
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 09. min_digit
 
-## file09
+Fayldagi eng kichik raqamni qaytaring.
 
-  Find the smallest of the numeric characters.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data09.txt"
-Output: 0
-
+Kirish: data (data.txt matni)
+Chiqarish: 0
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 10. longest_line
 
-## file10
+Eng uzun qatorni qaytaring.
 
-  Find the each row length and return the largest row.
-
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: "data10.txt"
-Output: 15
-
+Kirish: data (data.txt matni)
+Chiqarish: "Python darsiga 2 soat vaqt ajratdim"
 ```
 
-**Constraints:**
+---
 
-  - 1 <= length(list1) <= 10^5
+## 11. count_lines
 
+Fayldagi qatorlar sonini qaytaring.
 
-# Warning
-- don't copy other solutions or any solution
-- don't remove comments
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni)
+Chiqarish: 6
+```
+
+---
+
+## 12. count_words
+
+Fayldagi so'zlar sonini qaytaring (so'zlar bo'sh joy yoki yangi qator bilan ajratilgan).
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni)
+Chiqarish: 24
+```
+
+---
+
+## 13. get_numbers
+
+Fayldagi sonlarni (ketma-ket raqamlar bitta son hisoblanadi) butun sonlar ro'yxati ko'rinishida qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni)
+Chiqarish: [2000, 8, 2, 5, 3]
+```
+
+---
+
+## 14. sum_numbers
+
+Fayldagi sonlar (ketma-ket raqamlar bitta son) yig'indisini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni)
+Chiqarish: 2018
+```
+
+---
+
+## 15. lines_with_word
+
+So'z berilgan. Shu so'z uchraydigan qatorlarni ro'yxat ko'rinishida qaytaring (katta-kichik harf farqi yo'q).
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni), soz="soat"
+Chiqarish: ["Bugun 8 soat ishladim", "Python darsiga 2 soat vaqt ajratdim"]
+```
+
+**Misol 2:**
+
+```Python
+Kirish: data (data.txt matni), soz="python"
+Chiqarish: ["Python darsiga 2 soat vaqt ajratdim"]
+```
+
+---
+
+## 16. line_numbers_with_word
+
+So'z berilgan. Shu so'z uchraydigan qatorlar raqamlarini (1 dan boshlab) ro'yxat ko'rinishida qaytaring (katta-kichik harf farqi yo'q).
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni), soz="soat"
+Chiqarish: [3, 4]
+```
+
+**Misol 2:**
+
+```Python
+Kirish: data (data.txt matni), soz="Samarqand"
+Chiqarish: []
+```
+
+---
+
+## 17. most_words_line
+
+Eng ko'p so'zdan iborat qatorni qaytaring. Teng bo'lsa, birinchisini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni)
+Chiqarish: "Python darsiga 2 soat vaqt ajratdim"
+```
+
+---
+
+## 18. numbered_lines
+
+Har bir qator oldiga uning raqamini qo'yib, "<raqam>. <qator>" ko'rinishidagi satrlar ro'yxatini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni)
+Chiqarish: ["1. Allamurod Xakimov", "2. Toshkent shahri, 2000-yil", "3. Bugun 8 soat ishladim", ..., "6. Ertaga 3 ta kitob olaman"]
+```
+
+---
+
+## 19. word_frequency
+
+So'z berilgan. U fayl matnida necha marta alohida so'z sifatida uchrashini qaytaring (katta-kichik harf farqi yo'q).
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni), soz="soat"
+Chiqarish: 2
+```
+
+**Misol 2:**
+
+```Python
+Kirish: data (data.txt matni), soz="km"
+Chiqarish: 1
+```
+
+---
+
+## 20. capitalized_words
+
+Bosh harf bilan boshlanadigan so'zlarni ro'yxat ko'rinishida qaytaring (vergul va nuqtalarsiz).
+
+**Misol 1:**
+
+```Python
+Kirish: data (data.txt matni)
+Chiqarish: ["Allamurod", "Xakimov", "Toshkent", "Bugun", "Python", "Kechqurun", "Ertaga"]
+```
+

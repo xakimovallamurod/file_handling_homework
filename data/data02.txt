@@ -1,4 +1,0 @@
-samitmarkaz
-python
-ML
-Numpy
